@@ -13,7 +13,8 @@
 	{name : '11.jpg', describe : '申城彩虹'},
 	{name : '12.jpg', describe : '呐，花花'},
 	{name : '13.jpg', describe : '额。。。'},
-	{name : '14.jpg', describe : '很叼'}
+	{name : '14.jpg', describe : '很叼'},
+	{name : '15.jpg', describe : '一只小蜜蜂'}
 	]
 	
 	for(var i in img){
