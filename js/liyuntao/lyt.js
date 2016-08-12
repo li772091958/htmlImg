@@ -18,7 +18,8 @@
 	{name : 'aliyuntao-0015.jpg', describe : '仙桃西站'},
 	{name : 'aliyuntao-0016.jpg', describe : '乡村的天空'},
 	{name : 'aliyuntao-0017.jpg', describe : '环形天桥、东方明珠'},
-	{name : 'aliyuntao-0018.jpg', describe : '11'}
+	{name : 'aliyuntao-0018.jpg', describe : '11'},
+	{name : 'aliyuntao-0019.jpg', describe : '吉他'}
 	]
 	
 	for(var i in img){
@@ -26,7 +27,7 @@
 		var describe = img[i].describe;
 		var appendHtml = '<div class="item">' +
 							'<div class="animate-box">' +
-								'<a href="http://obryln0jh.bkt.clouddn.com/' + name + '" class="image-popup fh5co-board-img"><img src="http://obryln0jh.bkt.clouddn.com/' + name + '"></a>' +
+								'<a href="http://obryln0jh.bkt.clouddn.com/' + name + '-watermark" class="image-popup fh5co-board-img"><img src="http://obryln0jh.bkt.clouddn.com/' + name + '"></a>' +
 							'</div>' +
 							'<div class="fh5co-desc">' + describe + '</div>' +
 						 '</div>'
