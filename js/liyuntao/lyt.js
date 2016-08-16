@@ -10,6 +10,4 @@
 						 '</div>'
 		$("#fh5co-board").append(appendHtml);
 	}
-
-
 }());
