@@ -19,7 +19,8 @@
 	{name : 'aliyuntao-0016.jpg', describe : '乡村的天空'},
 	{name : 'aliyuntao-0017.jpg', describe : '环形天桥、东方明珠'},
 	{name : 'aliyuntao-0018.jpg', describe : '11'},
-	{name : 'aliyuntao-0019.jpg', describe : '吉他'}
+	{name : 'aliyuntao-0019.jpg', describe : '吉他'},
+	{name : 'aliyuntao-0020.jpg', describe : '城市剪影'}
 	]
 	
 	for(var i in img){
