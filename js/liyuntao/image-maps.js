@@ -19,5 +19,7 @@
 {name : 'aliyuntao-0017.jpg', describe : '环形天桥、东方明珠'},
 {name : 'aliyuntao-0018.jpg', describe : '11'},
 {name : 'aliyuntao-0019.jpg', describe : '吉他'},
-{name : 'aliyuntao-0020.jpg', describe : '城市剪影'}
+{name : 'aliyuntao-0020.jpg', describe : '城市剪影'},
+{name : 'aliyuntao-0021.jpg', describe : '黄浦江'},
+{name : 'aliyuntao-0022.jpg', describe : '黄浦江'}
 ]
