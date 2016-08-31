@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+	<title>lottery</title>
+	<style>
+	body{font-size:40px;}
+	a{background-color:#ABABAB;color:#000;text-align:center; min-width:200px;font-size:45px;height:50px;line-height:50px;cursor:pointer;border-radius:4px;border:none;width:auto;text-decoration:none;vertical-align:middle;}
+	</style>
+</head>
+
+<body>
+	<script>
+		//
+		var getRandom = function(n){
+			var list = new Array();
+			for(var i=0; i<n; i++){
+				list[i] = Math.floor(Math.random()*49+1);
+			}
+			return list;
+		}
+		var getTwo = function(n,m){
+			var str = ""
+			for(var i=0; i<n; i++){
+				str += getRandom(m) + "<br>";
+			}
+			return str;
+		}
+		document.write("特：<br>"+getRandom(5)+"<br><hr><br>");
+		document.write("特串：<br>"+getTwo(3,2)+"<hr><br>");
+		document.write("二中二：<br>"+getTwo(3,2)+"<hr><br>");
+		document.write("三中二/三中三：<br>"+getTwo(3,3)+"<hr><br>");
+		document.write("四中四（谨慎购买）：<br>"+getTwo(1,4)+"<hr><br>");
+	</script>
+	<center><a href="javascript:window.location.reload();">换一组</a></center>
+</body>
+
+
+</html>
