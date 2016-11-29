@@ -29,5 +29,6 @@
 {name : 'aliyuntao-0027.jpg', describe : '银杏'},
 {name : 'aliyuntao-0028.jpg', describe : '三伏谭人民广场'},
 {name : 'aliyuntao-0029.jpg', describe : '武科大 - 南二六楼视角'},
-{name : 'aliyuntao-0030.jpg', describe : '公司附近的一个教堂'}
+{name : 'aliyuntao-0030.jpg', describe : '公司附近的一个教堂'},
+{name : 'aliyuntao-0031.jpg', describe : '掉光叶子的银杏'}
 ]
