@@ -21,5 +21,13 @@
 {name : 'aliyuntao-0019.jpg', describe : '吉他'},
 {name : 'aliyuntao-0020.jpg', describe : '城市剪影'},
 {name : 'aliyuntao-0021.jpg', describe : '黄浦江'},
-{name : 'aliyuntao-0022.jpg', describe : '黄浦江'}
+{name : 'aliyuntao-0022.jpg', describe : '黄浦江'},
+{name : 'aliyuntao-0023.jpg', describe : '荧光小蜜蜂'},
+{name : 'aliyuntao-0024.jpg', describe : '夕阳'},
+{name : 'aliyuntao-0025.jpg', describe : '夕阳'},
+{name : 'aliyuntao-0026.jpg', describe : '田间小路'},
+{name : 'aliyuntao-0027.jpg', describe : '银杏'},
+{name : 'aliyuntao-0028.jpg', describe : '三伏谭人民广场'},
+{name : 'aliyuntao-0029.jpg', describe : '武科大 - 南二六楼视角'},
+{name : 'aliyuntao-0030.jpg', describe : '公司附近的一个教堂'}
 ]

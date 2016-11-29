@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Upload Image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="photography" />
+    <meta name="keywords" content="liyuntao aliyuntao liyuntao.top aliyuntao.top" />
+    <meta name="author" content="aliyuntao" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Salvattore -->
+    <link rel="stylesheet" href="css/salvattore.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/leancloud/av.min.js"></script>
+    
+    <style>
+    .garybody{
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%); 
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); 
+    filter: grayscale(100%); 
+    filter: gray;
+    }
+    
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}    
+    </style>
+
+    </head>
+    <body>
+        
+    <header id="fh5co-header" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="navbar-brand" href="index.html" style="font-size:30px">ALIYUNTAO</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END .header -->
+    
+    <center>
+    <a href="javascript:;" class="file">Select an image
+        <input type="file" onchange="preview(this)" id="photoFileUpload">
+    </a>
+    <div id="preview"><img style="width:600px;height:450px;"></div>
+    <a id="saveBtn" class="file">SAVE</a>
+    </center>
+
+ 
+
+    <footer id="fh5co-footer">
+        
+        <div class="container">
+            <div class="row row-padded">
+                <div class="col-md-12 text-center">
+                    <p><small>
+                        &copy; Aliyuntao. All Rights Reserved. <br>
+                        Get more photographs: <a href="http://li772091958.lofter.com" target="_blank" title="li772091958">lofter</a> <br>
+                        About me: <a href="about.html" title="personal bio">personal biography</a>
+                    </small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function preview(file){
+            var prevDiv = document.getElementById('preview');  
+            if (file.files && file.files[0]){
+                var reader = new FileReader();  
+                reader.onload = function(evt){  
+                    prevDiv.innerHTML = '<img src="' + evt.target.result + '" style="width:600px;height:450px;"/>';  
+                }    
+                reader.readAsDataURL(file.files[0]);  
+            } else { 
+                prevDiv.innerHTML = '<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';  
+            }  
+        }
+        
+        AV.initialize('PsLiU3e6sAFkoOnaBRS1BThk-gzGzoHsz', 'WQ2jeDbbVWlEnAJ3iWymS4Px');
+        
+        $('#saveBtn').click(function(){
+            var fileUploadControl = $('#photoFileUpload')[0];
+            if (fileUploadControl.files.length > 0) {
+              var localFile = fileUploadControl.files[0];
+              var name = 'avatar.jpg';
+
+              var file = new AV.File(name, localFile);
+              file.save().then(function(file) {
+                // 文件保存成功
+                //console.log(file.url());
+                alert("ͼƬ�ϴ��ɹ���");
+                location.reload();
+                window.open(file.url()); 
+              }, function(error) {
+                // 异常处理
+                //console.error(error);
+                alert(error.message);
+              });
+            }
+        })
+     </script> 
+
+    
+    </body>
+</html>
